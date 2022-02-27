@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="57.059">
+<testcase classname="Search and place order for the product" name="Price validation." time="30.298">
+<system-out><![CDATA[Given The user is on bigbasket homepage.....................................passed
+When The user search navigates to fruits and vegetable section..............passed
+And Searches for tomato.....................................................passed
+Then The user should get the price of the product...........................passed
+When The user searches navigates to offers page.............................passed
+And if product is available on the offers page..............................passed
+Then The user should get the price of the product on offers page............passed
+And The product name and price on offers page should be same as seen on homepage.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for the product" name="Price validation. 2" time="26.458">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; div:nth-child(1) &gt; div:nth-child(12) &gt; product-deck:nth-child(1) &gt; section:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; product-template:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(4) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; h4:nth-child(2) &gt; span:nth-child(2)&quot;}&#10;  (Session info: chrome=96.0.4664.110)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'LTIN352866', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [92e1acc0b7a4c1d53f8f193074c19d7d, findElement {using=css selector, value=body &gt; div:nth-child(1) &gt; div:nth-child(12) &gt; product-deck:nth-child(1) &gt; section:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; product-template:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(4) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; h4:nth-child(2) &gt; span:nth-child(2)}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\2073223\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58724/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 92e1acc0b7a4c1d53f8f193074c19d7d" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given The user is on bigbasket homepage.....................................passed
+When The user search navigates to fruits and vegetable section..............passed
+And Searches for perilla....................................................passed
+Then The user should get the price of the product...........................failed
+When The user searches navigates to offers page.............................skipped
+And if product is available on the offers page..............................skipped
+Then The user should get the price of the product on offers page............skipped
+And The product name and price on offers page should be same as seen on homepage.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body > div:nth-child(1) > div:nth-child(12) > product-deck:nth-child(1) > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > product-template:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > h4:nth-child(2) > span:nth-child(2)"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'LTIN352866', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92e1acc0b7a4c1d53f8f193074c19d7d, findElement {using=css selector, value=body > div:nth-child(1) > div:nth-child(12) > product-deck:nth-child(1) > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > product-template:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > h4:nth-child(2) > span:nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\2073223\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58724/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92e1acc0b7a4c1d53f8f193074c19d7d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at pageObjects.VegetablePage.getPrice(VegetablePage.java:31)
+	at StepDefinations.VegetablePageStepDefinations.the_user_should_get_the_price_of_the_product(VegetablePageStepDefinations.java:51)
+	at ✽.The user should get the price of the product(file:///C:/Users/2073223/eclipse-workspace/cucumber_aut_next/src/test/java/features/search.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
