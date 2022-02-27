@@ -28,6 +28,7 @@ public class OffersPageStepDefinations {
 		offersPage=testContextSetup.pageObjectManager.getOffersPage();
 		testContextSetup.genericUtils.implicitWait(10);
 		offersPage.scrollToProduct();
+		System.out.println("-----------------------------------------------------");
 
 	}
 
@@ -42,6 +43,7 @@ public class OffersPageStepDefinations {
 		productDiscountTitle =offersPage.getDiscountProductTitle().trim();
 		discountPriceStr = offersPage.getDiscountPrice();
 		System.out.println("The product is " + productDiscountTitle + " discount price is " + discountPriceStr);
+		System.out.println("-----------------------------------------------------");
 
 	}
 
@@ -55,7 +57,7 @@ public class OffersPageStepDefinations {
 		} else {
 			System.out.println("The product is not same as seen earlier in the HomePage.");
 		}
-
+		System.out.println("-----------------------------------------------------");
 		// Assert.assertEquals(discountPriceStr, productHomepagePrice);
 
 		//testContextSetup.genericUtils.quitBrowser();

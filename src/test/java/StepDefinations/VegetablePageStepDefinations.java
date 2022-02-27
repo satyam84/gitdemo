@@ -37,6 +37,7 @@ public class VegetablePageStepDefinations {
 	// fruits and vegetable sections page
 	@When("^Searches for (.+)$")
 	public void searches_for(String string) {
+		System.out.println("-----------------------------------------------------");
 		vegetablePage=testContextSetup.pageObjectManager.getVegetablePage();
 		testContextSetup.genericUtils.implicitWait(10);
 		vegetablePage.searchProduct(string);
@@ -46,6 +47,7 @@ public class VegetablePageStepDefinations {
 
 	@Then("The user should get the price of the product")
 	public void the_user_should_get_the_price_of_the_product() {
+		System.out.println("-----------------------------------------------------");
 		vegetablePage=testContextSetup.pageObjectManager.getVegetablePage();
 		testContextSetup.genericUtils.implicitWait(10);
 		testContextSetup.productHomepagePrice = vegetablePage.getPrice();
@@ -55,8 +57,10 @@ public class VegetablePageStepDefinations {
 
 	@When("The user searches navigates to offers page")
 	public void the_user_searches_navigates_to_offers_page() {
+		System.out.println("-----------------------------------------------------");
 		vegetablePage=testContextSetup.pageObjectManager.getVegetablePage();
 		testContextSetup.genericUtils.implicitWait(10);
 		vegetablePage.clickOnOffersPageLink();
+		System.out.println("-----------------------------------------------------");
 	}
 }

@@ -37,12 +37,14 @@ public class HomePageStepDefinations {
 	public void the_user_is_on_bigbasket_home_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new io.cucumber.java.PendingException();
+		System.out.println("-----------------------------------------------------");
 	}
 
 	@Given("The user is on bigbasket homepage")
 	public void the_user_is_on_bigbasket_homepage() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
+		System.out.println("-----------------------------------------------------");
 	}
 
 
@@ -56,6 +58,7 @@ public class HomePageStepDefinations {
 		homePage.moveToDialogBox();
 		testContextSetup.genericUtils.implicitWait(10);
 		homePage.clickfruitsVegies();
+		System.out.println("-----------------------------------------------------");
 	}
 	
 	@Then("User has to log in")
@@ -82,7 +85,7 @@ public class HomePageStepDefinations {
 		
 		homePage.wait_for_otp_and_click_on_verifyOtp_button();
 		
-		
+		System.out.println("-----------------------------------------------------");
 
 	}
 
@@ -92,7 +95,7 @@ public class HomePageStepDefinations {
 		//homePage.closeChatBox();
 		homePage.search_for_product();
 		homePage.closeChatBox();
-		
+		System.out.println("-----------------------------------------------------");
 		
 	}
 
@@ -107,7 +110,7 @@ public class HomePageStepDefinations {
 		Thread.sleep(1000);
 		
 		homePage.click_on_header();
-		
+		System.out.println("-----------------------------------------------------");
 	}
 
 	@Then("The product is added to the basket")
@@ -117,6 +120,6 @@ public class HomePageStepDefinations {
 		homePage.mouseHover_on_the_basket();
 		
 		homePage.proceedToCheckout();
-
+		System.out.println("-----------------------------------------------------");
 	}
 }
