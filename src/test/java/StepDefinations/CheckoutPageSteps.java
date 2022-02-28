@@ -35,7 +35,8 @@ public class CheckoutPageSteps {
 		this.testContextsetup=testContextsetup;
 		homePage=testContextsetup.pageObjectManager.getHomePage();
 		checkOutPage=testContextsetup.pageObjectManager.getCheckoutPage();
-		System.out.println("-----------------------------------------------------");
+		System.out.println("**********************************************************");
+
 	}
 	
 	
@@ -66,7 +67,7 @@ public class CheckoutPageSteps {
 		//erase the searchbox
 		testContextsetup.genericUtils.implicitWait(20);
 		homePage.clear_SearchBox();
-		System.out.println("-----------------------------------------------------");
+		System.out.println("**********************************************************");
 		//close browser
 		//testContextsetup.driver.quit();
 
